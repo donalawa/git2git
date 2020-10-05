@@ -1,0 +1,26 @@
+{
+  "name": "git_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "git2git": "./index.js",
+    "g2g": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "conf": "^7.1.2",
+    "esm": "^3.2.25",
+    "shelljs": "^0.8.4"
+  }
+}
