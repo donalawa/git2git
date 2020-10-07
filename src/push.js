@@ -10,7 +10,7 @@ import Conf from 'conf';
 // import Table from 'cli-table3';
 import { configKey } from './config';
 import { getRemote } from './utils';
-import { pushGitlab } from './utils';
+import { pushOnline } from './utils';
 import { throws } from 'assert';
 const chalk = require('chalk')
 const{ execSync } = require('child_process');
@@ -47,7 +47,7 @@ export async function push(args) {
         } catch (error) {
             throw new Error(error)
         }
-      pushGitlab(onlinePath,Pname,remote,branch,commitMessage);
+      pushOnline(onlinePath,Pname,remote,branch,commitMessage);
   }
   console.log(chalk.blueBright(`Done All Pushed Successfully To Gitlab`))
 }

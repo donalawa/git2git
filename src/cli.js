@@ -14,6 +14,7 @@ import { configure } from './config';
 import { projects } from './projects';
 import { push } from './push';
 import { pushAll } from './push_all';
+import { pushlocal } from './push_local';
 
 /**
 * Function description
@@ -25,13 +26,12 @@ export async function cli(argsArray) {
     
     const args = minimist(argsArray.slice(2));
     let cmd = args._[0] || 'g2g';
-    console.log(args)
+    // console.log(args)
     if(args._[0] === 'push' || args.p) {
         cmd = 'push'
     }
 
     if(args._[0] == '.'){
-        console.log('Push All Projects To Git Lab')
         cmd = 'all'
     }
     if(args.v) {
@@ -60,6 +60,9 @@ export async function cli(argsArray) {
             break;
         case 'all':
             pushAll(args)
+            break;
+        case 'pushlocal':
+            pushlocal(args);
             break;
         default:
             console.error(`"${cmd}" is not a valid command!`);

@@ -27,9 +27,11 @@ export function getRemote(path,projectName) {
   }
 }
 
-export function pushGitlab(path,Pname,remote,branch,message) {
+
+export function pushOnline(path,Pname,remote,branch,message) {
   
   try {
+    console.log(chalk.yellowBright(`Currently Working On Project: ${Pname}`))
     //Checkout to branch
     execSync(`git checkout ${branch}`,{
         cwd: `${path}/${Pname}`
@@ -37,22 +39,27 @@ export function pushGitlab(path,Pname,remote,branch,message) {
     //Pull updates
     execSync(`git pull ${remote}`,{
         cwd: `${path}/${Pname}`
-    })
+    }) 
 
     execSync(`git add .`,{
       cwd: `${path}/${Pname}`
     })
     
     shell.cd(`${path}/${Pname}`)
-    shell.exec(`git commit -m "${message}"`)
 
+   try {
+    shell.exec(`git commit -m "${message}"`)
+   } catch (error) {
+    console.log(chalk.greenBright(`Nothing to commit working tree clean`))
+   }
     execSync(`git push -u origin ${branch}`,{
       cwd: `${path}/${Pname}`
     })
+
+    console.log(chalk.greenBright(`Project: ${Pname} Pushed Successfully`))
   } catch (error) {
-    throw new Error(error)
+    console.log(chalk.redBright(`The above error occured in ${Pname}`))
   }
-  console.log(chalk.blueBright(`Project: ${Pname} Pushed Successfully To Gitlab`))
 }
 
 

@@ -16,14 +16,6 @@ export async function configure(args) {
   let currentConfigObject = config.get(configKey);
   currentConfigObject = currentConfigObject || {};
 
-//   let apiKey = args.apiKey || args.apikey || args['api-key'] || args.key || args.k;
-//   if (!apiKey) {
-//     apiKey = currentConfigObject.apiKey;
-//   }
-//   if (!apiKey) {
-//     return;
-//   }
-
   let local = args.local || args.l;
   if (!local) {
     local = currentConfigObject.local;
