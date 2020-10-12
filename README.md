@@ -1,5 +1,5 @@
 # GIT2GIT
-![Git2Git Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fjoomla.digital-peak.com%2Fblog%2F131-from-subversion-to-git&psig=AOvVaw05ZKy6Cx6z4RCQB0u2IXQB&ust=1602605737197000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCcpeO5r-wCFQAAAAAdAAAAABAD)
+![Git2Git Logo](https://drive.google.com/file/d/1Y0M0Bdi6lUP6J_32QGgqyjQ0_ysaFp1T/view?usp=sharing)
 
 ## Installation
 This is a [Node.js](https://nodejs.org/en/) module available through the

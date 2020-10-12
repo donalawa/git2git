@@ -1,5 +1,5 @@
 {
-  "name": "git_cli",
+  "name": "git2git",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Gighub","Gitlab","Github cli","Gitlab cli","Git cli","git","source control","vcs","version control system"],
+  "author": "Awa Donacien",
   "license": "ISC",
   "devDependencies": {
     "minimist": "^1.2.5"
@@ -22,5 +22,13 @@
     "conf": "^7.1.2",
     "esm": "^3.2.25",
     "shelljs": "^0.8.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donalawa/git2git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/donalawa/git2git/issues"
+  },
+  "homepage": "https://github.com/donalawa/git2git#readme"
 }
