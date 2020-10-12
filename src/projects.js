@@ -15,8 +15,7 @@ export async function projects(args) {
     const loc = chalk.blueBright('All Projects In Bitbucket Directory')
     const onl = chalk.blueBright('All Projects In Gitlab Directory')
     const config = new Conf().get(configKey);
- 
-    console.log(loc);
+
     try {
         execSync(`cd ${config.local}`)
         execSync('ls', {
