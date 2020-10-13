@@ -1,5 +1,5 @@
 # GIT2GIT
-![Git2Git Logo](https://drive.google.com/file/d/1Y0M0Bdi6lUP6J_32QGgqyjQ0_ysaFp1T/view?usp=sharing)
+![Git2Git Logo](https://firebasestorage.googleapis.com/v0/b/dr-soft-gufdou.appspot.com/o/G2G%20logo.png?alt=media&token=ef3c9d82-b8d1-4d01-b61b-a81377961487)
 
 ## Installation
 This is a [Node.js](https://nodejs.org/en/) module available through the
