@@ -1,6 +1,6 @@
 {
   "name": "git2git",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -10,18 +10,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Gighub","Gitlab","Github cli","Gitlab cli","Git cli","git","source control","vcs","version control system"],
+  "keywords": [
+    "Gighub",
+    "Gitlab",
+    "Github cli",
+    "Gitlab cli",
+    "Git cli",
+    "git",
+    "source control",
+    "vcs",
+    "version control system"
+  ],
   "author": "Awa Donacien",
   "license": "ISC",
-  "devDependencies": {
-    "minimist": "^1.2.5"
-  },
   "dependencies": {
     "axios": "^0.20.0",
     "chalk": "^4.1.0",
     "conf": "^7.1.2",
     "esm": "^3.2.25",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.4",
+    "minimist": "^1.2.5"
   },
   "repository": {
     "type": "git",
