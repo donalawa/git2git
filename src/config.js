@@ -23,6 +23,8 @@ export async function configure(args) {
   if (!local) {
     return;
   }
+  
+  
 
   let online = args.online || args.o;
   if (!online) {
