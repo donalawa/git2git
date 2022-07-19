@@ -42,6 +42,7 @@ ${chalk.greenBright('')}
       ${chalk.greenBright('')}
       ${chalk.cyanBright('Get Help')}
       ${chalk.greenBright('')}
+      
       ${chalk.yellowBright('[help | -h]')} ............... show help menu for all git2git commands]
 `,
 }
